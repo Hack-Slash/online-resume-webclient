@@ -1,3 +1,48 @@
 <h1>Resumes#show</h1>
 <p>Find me in app/views/resumes/show.html.erb</p>
 
+<h1>Student info</h1>
+<hr>
+<%= @students.id %>
+<%= @students.first_name %>
+<%= @students.last_name %>
+<%= @students.email %>
+<%= @students.short_bio %>
+<%= @students.linkedin_url %>
+<%= @students.twitter_handle %>
+<%= @students.personal_web_url %>
+<%= @students.online_resume_url %>
+<%= @students.github_url %>
+<%= @students.photo %>
+
+<h1>Capstones</h1>
+<hr>
+<%= @capstones.name %>
+<%= @capstones.description %>
+<%= @capstones.url %>
+<%= @capstones.screenshot %>
+
+<h1>Education</h1>
+<hr>
+<%= @educations.start_date %>
+<%= @educations.end_date %>
+<%= @educations.degree %>
+<%= @educations.university %>
+<%= @educations.details %>
+
+<h1>Experiecnes</h1>
+<hr>
+<%= @experiences.start_date %>
+<%= @experiences.end_date %>
+<%= @experiences.job_title %>
+<%= @experiences.company_name %>
+<%= @experiences.details %>
+
+<h1>Skills</h1>
+<%= @skills.skill_name %>
+
+
+
+
+
+
