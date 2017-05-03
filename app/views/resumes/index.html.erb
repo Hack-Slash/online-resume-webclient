@@ -1,2 +1,13 @@
-<h1>Resumes#index</h1>
-<p>Find me in app/views/resumes/index.html.erb</p>
+<div class="pull-center">
+	<h1> Totally Not a Fake University </h1>
+	<h2> Student Resumés </h2>
+	<hr>
+	
+	<% @resumes.each do |resume| %>
+		<img src="<%= resume.photo %>">
+		<p><a href="/resumes/<%= resume.id %>"> <%= "#{resume.first_name} #{resume.last_name}" %></p>
+		<p><%= resume.email %></p>
+		<hr>
+	<% end %>
+
+</div>
