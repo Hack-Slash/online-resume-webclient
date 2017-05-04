@@ -3,8 +3,7 @@
 	<h2> Student Resumés </h2>
 	<hr>
 	<% @students.each do |student| %>
-    <p><%= student['first_name'] %></p>
-    <p><%= student['last_name'] %></p>
+    <a href="/resumes/<%= student['id'] %>"><%= student['first_name'] %> <%= student['last_name'] %></a>
     <p><%= student['email'] %></p>
     <p><%= student['phone_number'] %></p>
     <p>Life story:<%= student['short_bio'] %></p>
