@@ -8,8 +8,6 @@ class ResumesController < ApplicationController
   def show
     
     @student = Unirest.get("http://localhost:3001/api/v1/students/#{params[:id]}").body
-
-
     
 
   end
