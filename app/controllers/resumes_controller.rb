@@ -1,6 +1,6 @@
 class ResumesController < ApplicationController
   def index
-   @resumes = Unirest.get("http://localhost:3001/api/v1/students").body
+   @students = Unirest.get("http://localhost:3001/api/v1/students").body
 
    render "index.html.erb"
   end
