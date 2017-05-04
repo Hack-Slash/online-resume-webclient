@@ -6,13 +6,13 @@ class ResumesController < ApplicationController
   end
 
   def show
-    resume =  []
+    # resume =  []
 
-    @capstones = resume['capstones']
-    @educations = resume['educations']
-    @experiences = resume['experiences']
-    @skills = resume['skills']
-    @students = resume['students']
+    # @capstones = resume['capstones']
+    # @educations = resume['educations']
+    # @experiences = resume['experiences']
+    # @skills = resume['skills']
+    # @students = resume['students']
 
   end
 end
