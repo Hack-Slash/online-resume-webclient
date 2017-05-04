@@ -6,13 +6,11 @@ class ResumesController < ApplicationController
   end
 
   def show
-    # resume =  []
+    
+    @student = Unirest.get("http://localhost:3001/api/v1/students/#{params[:id]}").body
 
-    # @capstones = resume['capstones']
-    # @educations = resume['educations']
-    # @experiences = resume['experiences']
-    # @skills = resume['skills']
-    # @students = resume['students']
+
+    
 
   end
 end
