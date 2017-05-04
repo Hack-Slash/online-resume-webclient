@@ -3,44 +3,17 @@
 
 <h1>Student info</h1>
 <hr>
-<%= @students.id %>
-<%= @students.first_name %>
-<%= @students.last_name %>
-<%= @students.email %>
-<%= @students.short_bio %>
-<%= @students.linkedin_url %>
-<%= @students.twitter_handle %>
-<%= @students.personal_web_url %>
-<%= @students.online_resume_url %>
-<%= @students.github_url %>
-<%= @students.photo %>
-
-<h1>Capstones</h1>
-<hr>
-<%= @capstones.name %>
-<%= @capstones.description %>
-<%= @capstones.url %>
-<%= @capstones.screenshot %>
-
-<h1>Education</h1>
-<hr>
-<%= @educations.start_date %>
-<%= @educations.end_date %>
-<%= @educations.degree %>
-<%= @educations.university %>
-<%= @educations.details %>
-
-<h1>Experiecnes</h1>
-<hr>
-<%= @experiences.start_date %>
-<%= @experiences.end_date %>
-<%= @experiences.job_title %>
-<%= @experiences.company_name %>
-<%= @experiences.details %>
-
-<h1>Skills</h1>
-<%= @skills.skill_name %>
-
+<p><%= @student['id'] %></p>
+<p><%= @student['first_name'] %></p>
+<p><%= @student['last_name'] %></p>
+<p><%= @student['email'] %></p>
+<p><%= @student['short_bio'] %></p>
+<p><%= @student['linkedin_url'] %></p>
+<p><%= @student['twitter_handle'] %></p>
+<p><%= @student['personal_web_url'] %></p>
+<p><%= @student['online_resume_url'] %></p>
+<p><%= @student['github_url'] %></p>
+<p><%= @student['photo'] %></p>
 
 
 
