@@ -3,11 +3,6 @@
 	<h2> Student Resumés </h2>
 	<hr>
 	
-	<% @resumes.each do |resume| %>
-		<img src="<%= resume.photo %>">
-		<p><a href="/resumes/<%= resume.id %>"> <%= "#{resume.first_name} #{resume.last_name}" %></p>
-		<p><%= resume.email %></p>
-		<hr>
-	<% end %>
+	<%= @resumes %>
 
 </div>
