@@ -1,3 +1,43 @@
 // Place all the styles related to the resumes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+img {
+  height: 75px;
+  width: 100px;
+  border-radius: 60
+}
+
+a {
+  color: white;
+  font-size: 1.5em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.business-card {
+  width: 400px;
+  height: 200px;
+  background-color: #375669;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px 10px 10px 10px;
+}
