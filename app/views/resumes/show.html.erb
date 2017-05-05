@@ -1,17 +1,13 @@
-
-<h1 >Student info</h1>
+<div align="center">
+<h1><%= @student['first_name'] %> <%= @student['last_name']%></h1>
 <hr>
-<p><%= @student['first_name'] %></p>
-<p><%= @student['last_name'] %></p>
 <p><%= @student['email'] %></p>
-<p><%= @student['short_bio'] %></p>
 <p><%= @student['linkedin_url'] %></p>
 <p><%= @student['twitter_handle'] %></p>
 <p><%= @student['personal_web_url'] %></p>
 <p><%= @student['online_resume_url'] %></p>
 <p><%= @student['github_url'] %></p>
 <p><%= @student['photo'] %></p>
-
 <h1> Experiences </h1>
 <hr>
 <p><%= @experience[0]['start_date'] %></p>
@@ -40,4 +36,5 @@
   <p><%= skill['skill_name'] %></p>
 <% end %>
 
+</div>
 
