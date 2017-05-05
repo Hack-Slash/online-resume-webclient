@@ -1,19 +1,19 @@
-<div class="pull-center">
-	<h1> Totally Not a Fake University </h1>
-	<h2> Student Resumés </h2>
-	<hr>
-	<% @students.each do |student| %>
-    <a href="/resumes/<%= student['id'] %>"><%= student['first_name'] %> <%= student['last_name'] %></a>
-    <p><%= student['email'] %></p>
-    <p><%= student['phone_number'] %></p>
-    <p>Life story:<%= student['short_bio'] %></p>
-    <p>LinkedIn: <%= student['linkedin_url'] %></p>
-    <p>Twitter: <%= student['twitter_handle'] %></p>
-    <p>Portfolio: <%= student['personal_web_url'] %></p>
-    <p>Online Resume: <%= student['online_resume_url'] %></p>
-    <p>GitHub: <%= student['github_url'] %></p>
-    <img src="<%= student['photo'] %>">
-    <hr>
-  <% end %>
 
-</div>
+<h1> Totally Not a Fake University </h1>
+<h2> Student Resumés </h2>
+<hr>
+
+<% @students.each_slice(3) do |three_students| %>
+  <div class="row">
+  <% three_students.each do |student| %>
+  <div class="col-md-4 business-card">
+      <a href="/resumes/<%= student['id'] %>"><%= student['first_name'] %> <%= student['last_name'] %></a>
+      <p><%= student['email'] %></p>
+      <p><%= student['phone_number'] %></p>
+    <img src="<%= student['photo'] %>">
+  </div>
+  <% end %>
+  </div>
+<% end %>
+
+
